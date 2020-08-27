@@ -31,13 +31,16 @@ Entre estas se encuentran:
         y los vectores a clasificar con x como los datos a clasificar y y el vector de etiquetas.
     MejorNVecinos(k_range,X_entranamiento, y_entranamiento,X_evaluacion, y_evaluacion): Evalua parámetro K entre 0 y 20.
 
+Factores.py: Código con el que se extraen los vectores de caracteristicas de cada una de las muestras implementadas tanto
+en el entrenamiento y en la validación del entrenamiento, como en la evaluación o clasificación.
+
 Entrenamiento.py: Código con el que se realiza el entramiento, la validación del entrenamiento y la clasificación.
 En este algortimo se obtiene el modelo del árbol de decisiones, las matrices de confusión y las graficas ROC.
-
-
 
 AnalisisRuido.py: Código con el que se evaluó la exactitud de los modelos con diferente niveles de SNR.
 Se ajusta con la variable SNR de la función adicionruido(audio) del archivo Funciones.py
 
+SVM.py: Codigó prueba con el que se evalua la mejor función kernel para el modelo de SVM.
+
 Algoritmo.py: Código del sistema de clasificación final, en donde se transmite la información al usuario y se 
-realizan las pruebas de tiempo.
+realizan las pruebas de tiempo. En este codigo se implementa el modelo de clasificación final guardado en el archivo SVMFinal.pkl 
